@@ -3,6 +3,7 @@
   --secondary-text-color: #ffffff;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --icon-color: #afb1b8;
 }
 /* 
 Палитра цветов:
@@ -100,7 +101,7 @@ img {
 .logo-light {
   color: var(--secondary-text-color);
 }
-/* Навигацыя */
+/*================Навигацыя====================== */
 .nav {
   display: flex;
   margin-left: 93px;
@@ -125,7 +126,7 @@ img {
 .link:focus {
   color: var(--accent-color);
 }
-/* контакты*/
+/* =============Contacts======================= */
 .contacts {
   display: flex;
   margin-left: auto;
@@ -134,9 +135,10 @@ img {
   margin-left: 50px;
 }
 .contacts-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -150,12 +152,39 @@ img {
 .contacts-link:focus {
   color: var(--accent-color);
 }
+.icon-mail {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
 
-/* Блок герой */
+.icon-phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* ===============Блок герой====================== */
 .hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+  background-color: rgba(196, 196, 196, 1);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img_bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   text-align: center;
 }
 .hero-title {
@@ -188,7 +217,7 @@ img {
   cursor: pointer;
 }
 
-/* Особенности */
+/* ======================Особенности============== */
 
 .features {
   display: flex;
@@ -199,6 +228,18 @@ img {
 .features .item {
   max-width: 270px;
 }
+.icon {
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+}
+
 .features-title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -215,7 +256,7 @@ img {
   margin-bottom: 0px;
 }
 
-/* Чем мы занимаемся */
+/* ==============Чем мы занимаемся ===============*/
 .activity {
   padding-top: 0px;
   display: flex;
@@ -224,7 +265,7 @@ img {
   margin-left: 30px;
 }
 
-/* Наша команда */
+/* ===============Наша команда==================== */
 .team-section:nth-child(2n) {
   background-color: rgba(245, 244, 250, 1);
 }
@@ -263,7 +304,64 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-/* Футер */
+
+.team-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-color);
+  justify-content: center;
+  align-items: center;
+}
+.team-icon {
+  fill: currentColor;
+}
+
+.icon-list .item-icon + .item-icon {
+  margin-left: 10px;
+}
+.icon-list {
+  display: flex;
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-link:hover,
+.team-link:focus {
+  color: white;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+/* ==============Постоянные клиенты========= */
+.clients-list {
+  display: flex;
+}
+.clients-list .item + .item {
+  margin-left: 30px;
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--icon-color);
+  align-items: center;
+  justify-content: center;
+}
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+/* ==============Футер====================== */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -272,6 +370,9 @@ img {
 .footer .logo {
   display: block;
   margin-bottom: 20px;
+}
+.footer-box {
+  display: flex;
 }
 .address {
   color: var(--secondary-text-color);
@@ -297,6 +398,46 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+/* =============================Join========== */
+.join-box {
+  margin-left: 70px;
+  color: var(--secondary-text-color);
+}
+.join {
+  display: flex;
+}
+.join-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  color: var(--secondary-text-color);
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.join-link:focus,
+.join-link:hover {
+  background: var(--accent-color);
+}
+.join .item-icon + .item-icon {
+  margin-left: 10px;
+}
+.join-icon {
+  fill: currentColor;
 }
 
 /* -----------------------------------------------ПОРТФОЛИО-------------------------------------------------------------------- */
@@ -377,4 +518,15 @@ img {
 
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(238, 238, 238, 1);
+}
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+.card-link:focus,
+.card-link:hover {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
