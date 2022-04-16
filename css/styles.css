@@ -229,15 +229,18 @@ img {
   max-width: 270px;
 }
 .icon {
+  width: 70px;
+  height: 70px;
+}
+.features-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
 }
 
 .features-title {
@@ -322,9 +325,8 @@ img {
 }
 .icon-list {
   display: flex;
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+  margin-top: 16px;
+  justify-content: center;
 }
 
 .team-link:hover,
@@ -372,6 +374,7 @@ img {
   margin-bottom: 20px;
 }
 .footer-box {
+  align-items: baseline;
   display: flex;
 }
 .address {
@@ -525,7 +528,6 @@ img {
 }
 .card-link:focus,
 .card-link:hover {
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
